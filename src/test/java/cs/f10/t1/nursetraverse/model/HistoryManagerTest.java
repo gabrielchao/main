@@ -11,6 +11,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import java.util.NoSuchElementException;
 import java.util.Optional;
 
+import cs.f10.t1.nursetraverse.model.history.HistoryManager;
+import cs.f10.t1.nursetraverse.model.history.HistoryRecord;
 import org.junit.jupiter.api.Test;
 
 import cs.f10.t1.nursetraverse.logic.commands.MutatorCommand;

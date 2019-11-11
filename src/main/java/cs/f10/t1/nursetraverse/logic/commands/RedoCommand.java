@@ -1,7 +1,7 @@
 package cs.f10.t1.nursetraverse.logic.commands;
 
 import cs.f10.t1.nursetraverse.logic.commands.exceptions.CommandException;
-import cs.f10.t1.nursetraverse.model.HistoryRecord;
+import cs.f10.t1.nursetraverse.model.history.HistoryRecord;
 import cs.f10.t1.nursetraverse.model.Model;
 
 /**

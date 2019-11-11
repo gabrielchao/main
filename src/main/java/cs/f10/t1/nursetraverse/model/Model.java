@@ -12,6 +12,7 @@ import cs.f10.t1.nursetraverse.commons.core.index.Index;
 import cs.f10.t1.nursetraverse.logic.commands.MutatorCommand;
 import cs.f10.t1.nursetraverse.model.appointment.Appointment;
 import cs.f10.t1.nursetraverse.model.appointment.AppointmentSortedByDateTime;
+import cs.f10.t1.nursetraverse.model.history.HistoryRecord;
 import cs.f10.t1.nursetraverse.model.patient.Patient;
 import cs.f10.t1.nursetraverse.model.visit.Visit;
 import javafx.collections.ObservableList;
