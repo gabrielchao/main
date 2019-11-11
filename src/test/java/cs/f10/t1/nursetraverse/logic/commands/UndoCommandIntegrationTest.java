@@ -8,10 +8,10 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import cs.f10.t1.nursetraverse.commons.core.index.Index;
-import cs.f10.t1.nursetraverse.model.history.HistoryRecord;
 import cs.f10.t1.nursetraverse.model.Model;
 import cs.f10.t1.nursetraverse.model.ModelManager;
 import cs.f10.t1.nursetraverse.model.UserPrefs;
+import cs.f10.t1.nursetraverse.model.history.HistoryRecord;
 import cs.f10.t1.nursetraverse.model.patient.Patient;
 import cs.f10.t1.nursetraverse.testutil.EditPatientDescriptorBuilder;
 import cs.f10.t1.nursetraverse.testutil.PatientBuilder;

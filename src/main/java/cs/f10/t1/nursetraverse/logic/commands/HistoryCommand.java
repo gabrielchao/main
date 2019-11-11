@@ -3,8 +3,8 @@ package cs.f10.t1.nursetraverse.logic.commands;
 import static java.util.Objects.requireNonNull;
 
 import cs.f10.t1.nursetraverse.commons.util.CollectionUtil;
-import cs.f10.t1.nursetraverse.model.history.HistoryRecord;
 import cs.f10.t1.nursetraverse.model.Model;
+import cs.f10.t1.nursetraverse.model.history.HistoryRecord;
 import javafx.collections.ObservableList;
 
 /**
