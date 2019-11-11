@@ -53,8 +53,6 @@ object from `copiedPatient`, thus changes to `patient` would not affect `copiedP
 image::deep_copy.png[]
 ****
 
-==== Model
-
 The following methods are added to the `Model` interface:
 
 * `Model#commit(MutatorCommand)` - Commits the changes made to the address book since the last call to this method,
@@ -63,6 +61,18 @@ making them permanent and updating the UI data. The committing `MutatorCommand` 
 * `Model#undoTo(HistoryRecord)` - Reverts current model state to the that contained in the specified `HistoryRecord`
 (i.e. the state before the command was executed).
 * `Model#redo()` - Redoes the previous `MutatorCommand` if it was an undo.
+
+Furthermore, In addition to `MutatorCommand` which was described earlier, the following logical classes are added:
+
+1. `UndoCommand` - Undoes a designated command in the history, or the previous one if no argument is specified. The
+`COMMAND_WORD` for this command is `app-undo`.
+2. `UndoCommandParser` - Parses input arguments and creates a new UndoCommand object.
+3. `RedoCommand` - Redoes the previous command if it was an undo. The `COMMAND_WORD` for this command is `app-redo`.
+
+`HistoryManager` checks the classes of commands pushed to the history and does not record
+them if they are instances of `UndoCommand` or `RedoCommand`. This ensures that successive `UndoCommand` s do
+not undo themselves instead of the desired data-modifying commands, requiring `RedoCommand` for
+the special case of undo reversion.
 
 ==== Model Design Considerations
 
@@ -137,20 +147,6 @@ trusts `LogicManager` to push the transaction to history after (and only
 after) calling `Model#commit()`.
 *** Requires `Command#execute()` to accept `HistoryManager` as a parameter just so
 `UndoCommand` and `RedoCommand` can work even though the vast majority of commands do not require it.
-
-==== Logic
-
-In addition to `MutatorCommand` which was described earlier, the following logical classes are added:
-
-1. `UndoCommand` - Undoes a designated command in the history, or the previous one if no argument is specified. The
-`COMMAND_WORD` for this command is `app-undo`.
-2. `UndoCommandParser` - Parses input arguments and creates a new UndoCommand object.
-3. `RedoCommand` - Redoes the previous command if it was an undo. The `COMMAND_WORD` for this command is `app-redo`.
-
-`HistoryManager` checks the classes of commands pushed to the history and does not record
-them if they are instances of `UndoCommand` or `RedoCommand`. This ensures that successive `UndoCommand` s do
-not undo themselves instead of the desired data-modifying commands, requiring `RedoCommand` for
-the special case of undo reversion.
 
 ==== UI
 
