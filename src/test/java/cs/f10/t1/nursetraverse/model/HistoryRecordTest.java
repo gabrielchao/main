@@ -1,14 +1,13 @@
-package cs.f10.t1.nursetraverse.model.history;
+package cs.f10.t1.nursetraverse.model;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
+import cs.f10.t1.nursetraverse.model.history.HistoryRecord;
 import org.junit.jupiter.api.Test;
 
 import cs.f10.t1.nursetraverse.commons.core.index.Index;
 import cs.f10.t1.nursetraverse.logic.commands.MutatorCommand;
-import cs.f10.t1.nursetraverse.model.AppointmentBook;
-import cs.f10.t1.nursetraverse.model.PatientBook;
 import cs.f10.t1.nursetraverse.testutil.Assert;
 import cs.f10.t1.nursetraverse.testutil.DummyMutatorCommand;
 import cs.f10.t1.nursetraverse.testutil.TypicalAppointments;
