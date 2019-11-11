@@ -1,6 +1,6 @@
 //@@author gabrielchao
 
-package cs.f10.t1.nursetraverse.model.history;
+package cs.f10.t1.nursetraverse.model;
 
 import java.util.ArrayList;
 import java.util.Deque;
@@ -13,8 +13,6 @@ import cs.f10.t1.nursetraverse.commons.util.CollectionUtil;
 import cs.f10.t1.nursetraverse.logic.commands.MutatorCommand;
 import cs.f10.t1.nursetraverse.logic.commands.RedoCommand;
 import cs.f10.t1.nursetraverse.logic.commands.UndoCommand;
-import cs.f10.t1.nursetraverse.model.AppointmentBook;
-import cs.f10.t1.nursetraverse.model.PatientBook;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 

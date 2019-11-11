@@ -3,7 +3,7 @@ package cs.f10.t1.nursetraverse.ui;
 import java.util.Optional;
 
 import cs.f10.t1.nursetraverse.commons.core.index.Index;
-import cs.f10.t1.nursetraverse.model.history.HistoryRecord;
+import cs.f10.t1.nursetraverse.model.HistoryRecord;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.layout.Region;

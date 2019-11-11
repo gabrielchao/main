@@ -12,7 +12,7 @@ import cs.f10.t1.nursetraverse.logic.commands.MutatorCommand;
 import cs.f10.t1.nursetraverse.logic.commands.exceptions.CommandException;
 import cs.f10.t1.nursetraverse.logic.parser.AppParser;
 import cs.f10.t1.nursetraverse.logic.parser.exceptions.ParseException;
-import cs.f10.t1.nursetraverse.model.history.HistoryRecord;
+import cs.f10.t1.nursetraverse.model.HistoryRecord;
 import cs.f10.t1.nursetraverse.model.Model;
 import cs.f10.t1.nursetraverse.model.ReadOnlyPatientBook;
 import cs.f10.t1.nursetraverse.model.appointment.Appointment;

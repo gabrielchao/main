@@ -1,14 +1,10 @@
 //@@author gabrielchao
 
-package cs.f10.t1.nursetraverse.model.history;
+package cs.f10.t1.nursetraverse.model;
 
 import static cs.f10.t1.nursetraverse.commons.util.CollectionUtil.requireAllNonNull;
 
 import cs.f10.t1.nursetraverse.logic.commands.MutatorCommand;
-import cs.f10.t1.nursetraverse.model.AppointmentBook;
-import cs.f10.t1.nursetraverse.model.PatientBook;
-import cs.f10.t1.nursetraverse.model.ReadOnlyAppointmentBook;
-import cs.f10.t1.nursetraverse.model.ReadOnlyPatientBook;
 
 /**
  * Record of the command and data of one atomic commit in the command history. It consists of the
